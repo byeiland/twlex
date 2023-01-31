@@ -193,7 +193,7 @@ end
 end
 function ChannelJoin(msg)
 JoinChannel = true
-local url , res = https.request('https://api.telegram.org/bot5502086450:AAHhh0EM5gn_cl0-5oB9UzJ7_pGz0wPqZPI/getchatmember?chat_id=@W_WAW&user_id='..msg.sender_id.user_id)
+local url , res = https.request('https://api.telegram.org/bot5502086450:AAHhh0EM5gn_cl0-5oB9UzJ7_pGz0wPqZPI/getchatmember?chat_id=@iinzzz&user_id='..msg.sender_id.user_id)
 local ChannelJoin = JSON.decode(url)
 if ChannelJoin and ChannelJoin.result and ChannelJoin.result.status == "left" then
 JoinChannel = false
@@ -1292,7 +1292,7 @@ data = {
 {text = 'تحميل صوت', data = data.sender_user_id..'sound/'..id}, {text = 'تحميل فيديو', data = data.sender_user_id..'video/'..id}, 
 },
 {
-{text = 'سورس ريو', url = 't.me/W_WAW'},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'},
 },
 }
 }
@@ -1326,7 +1326,7 @@ local p = p:gsub("'","-")
 local p = p:gsub('"',"-") 
 bot.deleteMessages(chat_id,{[1]= msg_id})
 os.execute("yt-dlp "..link.." -f 251 -o '"..title..".mp3'")
-bot.sendAudio(chat_id,0,'./'..title..'.mp3',"• ["..title.."]("..link..")\n• بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@W_WAW]","md",tostring(time),title,p) 
+bot.sendAudio(chat_id,0,'./'..title..'.mp3',"• ["..title.."]("..link..")\n• بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@iinzzz]","md",tostring(time),title,p) 
 sleep(2)
 os.remove(""..title..".mp3")
 else
@@ -1350,7 +1350,7 @@ local title = title:gsub("'","-")
 local title = title:gsub('"',"-") 
 bot.deleteMessages(chat_id,{[1]= msg_id})
 os.execute("yt-dlp "..link.." -f 18 -o '"..title..".mp4'")
-bot.sendVideo(chat_id,0,'./'..title..'.mp4',"• ["..title.."]("..link..")\n• بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@W_WAW]","md") 
+bot.sendVideo(chat_id,0,'./'..title..'.mp4',"• ["..title.."]("..link..")\n• بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@iinzzz]","md") 
 sleep(4)
 os.remove(""..title..".mp4")
 else
@@ -2108,7 +2108,7 @@ if Text and Text:match('(%d+)/play_wheel') then
     local keyboard = {} 
     keyboard.inline_keyboard = {
     {
-    {text = 'سورس ريو',url="t.me/W_WAW"}, 
+    {text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
     },
     }
     local msg_reply = msg_id/2097152/0.5
@@ -2183,7 +2183,7 @@ end
 if Text and Text:match('(%d+)/toptop') then
 local UserId = Text:match('(%d+)/toptop')
 if tonumber(data.sender_user_id) == tonumber(UserId) then
-local toptop = "⇜ اهلين فيك في قوائم التوب\nللمريو من التفاصيل - [@W_WAW]\n✓"
+local toptop = "⇜ اهلين فيك في قوائم التوب\nللمريو من التفاصيل - [@iinzzz]\n✓"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -2201,7 +2201,7 @@ data = {
     },
     {
     
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -2255,7 +2255,7 @@ if Text and Text:match('(%d+)/mazratee') then
   {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
   },
   {
-  {text = '-سورس ريو ',url="t.me/W_WAW"}, 
+  {text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}, 
   },
   }
   }
@@ -2326,7 +2326,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2600,7 +2600,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2678,7 +2678,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2751,7 +2751,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2836,7 +2836,7 @@ data = {
 {text = '• رجوع •', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2855,7 +2855,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2874,7 +2874,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -2912,7 +2912,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 }
 }
 bot.editMessageText(chat_id,msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2950,7 +2950,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 }
 }
 bot.editMessageText(chat_id,msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2987,7 +2987,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 }
 }
 bot.editMessageText(chat_id,msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -3011,7 +3011,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3035,7 +3035,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3060,7 +3060,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3324,7 +3324,7 @@ data = {
 {text = 'الغاء كتمه', data = data.sender_user_id..'unmute'..replyy}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3341,7 +3341,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3363,7 +3363,7 @@ data = {
 {text = 'الغاء حظره', data = data.sender_user_id..'unban'..replyy}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3381,7 +3381,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3402,7 +3402,7 @@ data = {
 {text = 'الغاء تقييده', data = data.sender_user_id..'unkid'..replyy}, 
 },
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3432,7 +3432,7 @@ if Text and Text:match('(%d+)/sahb') then
   type = 'inline',
   data = {
   {
-  {text = '-سورس ريو ',url="t.me/W_WAW"}, 
+  {text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}, 
   },
   }
   }
@@ -3447,7 +3447,7 @@ if Text and Text:match('(%d+)/sahb') then
   type = 'inline',
   data = {
   {
-  {text = '-سورس ريو ',url="t.me/W_WAW"}, 
+  {text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}, 
   },
   }
   }
@@ -3465,7 +3465,7 @@ if Text and Text:match('(%d+)/sahb') then
   type = 'inline',
   data = {
   {
-  {text = '-سورس ريو ',url="t.me/W_WAW"}, 
+  {text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}, 
   },
   }
   }
@@ -3483,7 +3483,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 },
 }
 }
@@ -3606,13 +3606,13 @@ return bot.answerCallbackQuery(data.id, "• الامر لا يخصك", true)
 end
 local editMedia = {
 type = "photo",
-media = "https://t.me/-سورس ريو s1/15",
+media = "https://t.me/-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . s1/15",
 caption = "*• مرحبا بك عزيزي في الاوامر \n *━━━━━━━━━━━ *\n• /lang لتغيير لغه اللعبه \n• /play لبدأ اللعبه \n• /me لعرض ايديك باللعبه \n• /child لتشغيل وضع الأطفال  \n• /top لرؤيه المتصدرين في اللعبه  ━━━━━━━━━━━ \n*",
 parse_mode = "MARKDOWN"
 }
 local reply_markup = {
 inline_keyboard = {
-{{text = '-سورس ريو ', url="https://t.me/W_WAW"}}
+{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ', url="https://t.me/iinzzz"}}
 }
 }
 return https.request("https://api.telegram.org/bot"..Token.."/editMessageMedia?chat_id="..chat_id.."&message_id="..(msg_id/2097152/0.5).."&media="..JSON.encode(editMedia).."&reply_markup="..JSON.encode(reply_markup))
@@ -4012,7 +4012,7 @@ if Text == 'EndAddarrayy'..user_id then
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text = 'سورس ريو',url="t.me/W_WAW"}},
+{{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}},
 }
 }
 if redis:get(bot_id..'Set:arrayy'..user_id..':'..chat_id) == 'true1' then
@@ -4026,7 +4026,7 @@ if Text == 'EndAddarray'..user_id then
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text = 'سورس ريو',url="t.me/W_WAW"}},
+{{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}},
 }
 }
 if redis:get(bot_id..'Set:array'..user_id..':'..chat_id) == 'true1' then
@@ -4084,7 +4084,7 @@ return false
 end   
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
-{{text = 'سورس ريو',url="t.me/W_WAW"}},
+{{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}},
 }
 }
 if tonumber(infomsg[2]) == 1 then
@@ -5122,7 +5122,7 @@ if Text == "Updates" then
 reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = '• تحديث البوت .',data="UpBot"},{text = '• تحديث السورس .',data="UpSu"}},
-{{text = '• قناه التحديثات .',url="t.me/W_WAW"}},
+{{text = '• قناه التحديثات .',url="t.me/iinzzz"}},
 {{text = '• رجوع .',data="Can"}},
 }
 }
@@ -5902,12 +5902,12 @@ ban = ' '..UserInfo.first_name..' '
 u = ''..UserInfo.username..''
 else
 t = '['..UserInfo.first_name..'](tg://user?id='..UserInfo.id..')'
-u = 'W_WAW'
+u = 'iinzzz'
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = '• Add Me',url="https://t.me/"..bot.getMe().username.."?startgroup=new"}},
-{{text = '• -سورس ريو ',url="t.me/W_WAW"}},
+{{text = '• -- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}},
 {{text = '• DEVELOPER',url="https://t.me/"..(u)..""}},
 }
 }
@@ -7934,7 +7934,7 @@ end
 if Owner(msg) then
 if text == "ترتيب الاوامر" then
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 redis:set(bot_id..":"..msg.chat_id..":Command:ا","ايدي")
@@ -8018,10 +8018,6 @@ end
 bot.sendText(msg.chat_id,msg.id,ls,"md",true)  
 end
 if text == "الاوامر" then   
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
-end
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = "اوامر الحماية",data="Amr_"..msg.sender_id.user_id.."_11"},{text = " التفعيل والتعطيل",data="Amr_"..msg.sender_id.user_id.."_6"}},
@@ -8029,15 +8025,15 @@ type = 'inline',data = {
 {{text =" اوامر المنشئ",data="Amr_"..msg.sender_id.user_id.."_3"},{text ="اوامر المنشئ الاساسي",data="Amr_"..msg.sender_id.user_id.."_4"}},
 {{text ="اوامر المدير",data="Amr_"..msg.sender_id.user_id.."_2"},{text = "اوامر المطور",data="Amr_"..msg.sender_id.user_id.."_44"}},
 {{text = "اوامر التسلية",data="Amr_"..msg.sender_id.user_id.."_7"},{text ="الالعاب",data="Amr_"..msg.sender_id.user_id.."_12"}},
-{{text = ' - سورس ريو . ',url="t.me/W_WAW"}},
+{{text = ' - - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . . ',url="t.me/iinzzz"}},
 }
 }
-bot.sendText(msg.chat_id,msg.id,"*• مرحبا عزيزي في قائمه الاوامر ✓*","md", true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id,"*⌔︰ قائمه الاوامر\n *┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ *\n⌔︰ م1  اوامر الحمايه .\n⌔︰ م2  اوامر إعدادات المجموعه .\n⌔︰ م3  اوامر القفل والفتح .\n⌔︰ م4  اوامر اخرى .*","md", true, false, false, false, reply_markup)
 end
 if text == "الاعدادات" then   
 
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 reply_markup = bot.replyMarkup{
@@ -9757,7 +9753,7 @@ if text == 'معلومات المتجر' or text == 'معلومات ملفات �
   end
 if text == 'بنك' or text == 'البنك' then
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 bot.sendText(msg.chat_id,msg.id,[[
@@ -9864,7 +9860,7 @@ if text == "." or text == "/start" then
   
 if text == 'انشاء حساب بنكي' or text == 'انشاء حساب البنكي' or text =='انشاء الحساب بنكي' or text =='انشاء الحساب البنكي' or text == "انشاء حساب" or text == "فتح حساب بنكي" then
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 cobnum = tonumber(redis:get(bot_id.."bandid"..msg.sender_id.user_id))
@@ -9881,7 +9877,7 @@ data = {
 {
 {text = 'ماستر', data = msg.sender_id.user_id..'/master'},{text = 'فيزا', data = msg.sender_id.user_id..'/visaa'},{text = 'ريو ', data = msg.sender_id.user_id..'/express'},
 },
-{text = 'سورس ريو',url="t.me/W_WAW"}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}, 
 }
 }
 return bot.sendText(msg.chat_id,msg.id,ttshakse,"md",false, false, false, false, reply_markup)
@@ -10677,7 +10673,7 @@ bot.sendText(msg.chat_id,msg.id, "⇜ ماعنده حساب بنكي","md",true)
 end
 end
 if text == "توب" or text == "التوب" then
-local toptop = "⇜ اهلين فيك في قوائم التوب\nللمريو من التفاصيل - [@W_WAW]\n✓"
+local toptop = "⇜ اهلين فيك في قوائم التوب\nللمريو من التفاصيل - [@iinzzz]\n✓"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -10695,7 +10691,7 @@ data = {
     },
     {
 
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -10774,7 +10770,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -10840,7 +10836,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -13822,7 +13818,7 @@ gg = "\n\nملاحظة : اي شخص مخالف للعبة بالغش او حا�
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -13894,7 +13890,7 @@ gg = "\n\nملاحظة : اي شخص مخالف للعبة بالغش او حا�
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -14070,7 +14066,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- سورس ريو .', url="t.me/W_WAW"},
+{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .', url="t.me/iinzzz"},
 },
 }
 }
@@ -14984,7 +14980,7 @@ local intk = inoi:gsub(" ","-")
 lan = "ar"
 local rand = math.random(1,999)
 os.execute("gtts-cli "..intk.." -l '"..lan.."' -o 'intk"..rand..".mp3'")
-bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@W_WAW")
+bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@iinzzz")
 sleep(1)
 os.remove("intk"..rand..".mp3")
 else
@@ -15053,7 +15049,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -15122,7 +15118,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -15240,7 +15236,7 @@ if text and text:match('^اسحب (.*)$') or text and text:match('^سحب (.*)$'
   {
   {text = '🤑', data = msg.sender_id.user_id.."/sahb"},{text = '🤑', data = msg.sender_id.user_id.."/sahb"},{text = '🤑', data = msg.sender_id.user_id.."/sahb"},
   },
-  {text = '-سورس ريو ',url="t.me/W_WAW"}, 
+  {text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}, 
   }
   }
   return bot.sendText(msg.chat_id,msg.id,"⇜ اختر الان :\n✦","md",false, false, false, false, reply_markup)
@@ -15263,7 +15259,7 @@ local intk = inoi:gsub(" ","-")
 lan = "ar"
 local rand = math.random(1,999)
 os.execute("gtts-cli "..intk.." -l '"..lan.."' -o 'intk"..rand..".mp3'")
-bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@W_WAW")
+bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@iinzzz")
 sleep(1)
 os.remove("intk"..rand..".mp3")
 else
@@ -15478,7 +15474,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url="t.me/W_WAW"},
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url="t.me/iinzzz"},
 },
 }
 }
@@ -15524,7 +15520,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '•  Telegram ',url="https://my.telegram.org/auth?to=delete"},{text = '•  instagram ',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},
 {{text = '•  Facebook ',url="https://www.facebook.com/help/deleteaccount"},{text = '•  Snspchat ',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},
-{{text = 'سورس ريو ',url="t.me/W_WAW"}},
+{{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ',url="t.me/iinzzz"}},
 }
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/f_0_C&caption=".. URL.escape(Text).."&photo=29&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -15832,7 +15828,7 @@ if text and text:match('^ايدي @(%S+)$') or text and text:match('^كشف @(%S
 local UserName = text:match('^ايدي @(%S+)$') or text:match('^كشف @(%S+)$')
 
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 local UserId_Info = bot.searchPublicChat(UserName)
@@ -15860,7 +15856,7 @@ bot.sendText(msg.chat_id,msg.id,"*iD ↦ *"..(UserId_Info.id).." **\n*uSeR ↦ *
 end
 if text == 'ايديه' or text == 'كشف'  and msg.reply_to_message_id ~= 0 then
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 
@@ -15884,7 +15880,7 @@ end
 if text and text:match('^كشف (%d+)$') or text and text:match('^ايدي (%d+)$') then
 local UserName = text:match('^كشف (%d+)$') or text:match('^ايدي (%d+)$')
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 local UserInfo = bot.getUser(UserName)
@@ -15938,7 +15934,7 @@ end
 
 if text == "الالعاب" or text == "اوامر التحشيش" or text == "التحشيش" or text == "اوامر التسليه" or text == "التسليه"then   
 if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-سورس ريو  SOURCE | سورس ريو', url = 't.me/W_WAW'}, },}}
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .  SOURCE | - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, },}}
 return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ✓  ،*',"md",false, false, false, false, reply_markup)
 end
 reply_markup = bot.replyMarkup{
@@ -16847,7 +16843,7 @@ local Text ='*الصراحه اتفق هذا شبيهك .*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'سورس ريو', url = "https://t.me/W_WAW"}
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = "https://t.me/iinzzz"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16863,7 +16859,7 @@ local Text ='*الصراحه اتفق هذي شبيهتك .*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'سورس ريو', url = "https://t.me/W_WAW"}
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = "https://t.me/iinzzz"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16878,7 +16874,7 @@ if text == "قصيده" or text == "ق" then
   local MsgId = msg.id/2097152/0.5
   local MSGID = string.gsub(MsgId,'.0','')
   keyboard = {}
-  keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+  keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
   local msg_id = msg.id/2097152/0.5
   https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RRRRRRRiRRR/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
   end
@@ -16891,7 +16887,7 @@ local Text ='🎙'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L_W_2/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -16904,7 +16900,7 @@ local Text ='تم اختيار الشعر لك '
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/rteww0/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -16917,7 +16913,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/nyx441/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -16930,7 +16926,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -16943,7 +16939,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/avboytol/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -16956,7 +16952,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/QXXX_4/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -16969,7 +16965,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/LKKKKR/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -16982,7 +16978,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/MoviesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -16995,7 +16991,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SeriesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17008,7 +17004,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17021,7 +17017,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/stortolen/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17034,7 +17030,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17044,7 +17040,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/djsjdjdd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17054,7 +17050,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/flflfldld/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17064,7 +17060,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/PhotosWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17074,7 +17070,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/flflfldld/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17084,7 +17080,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/ggfuseeses/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17094,7 +17090,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/viziwirdudxx/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17104,7 +17100,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/xiaiedidddd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17114,7 +17110,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SSSSDIBOTZ/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17124,7 +17120,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/sjsissss/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17134,7 +17130,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/KEPOPMEGGA/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17144,7 +17140,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17154,7 +17150,7 @@ local Text =''
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '- سورس ريو .',url="t.me/W_WAW"}}} 
+keyboard.inline_keyboard = {{{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .',url="t.me/iinzzz"}}} 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/KORAMEGGA/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -17278,7 +17274,7 @@ data = {
 {text = ' نعم ', data = msg.sender_id.user_id..'/Nzlne'},{text = ' لا ', data = msg.sender_id.user_id..'/noNzlne'},
 },
 {
-{text = 'سورس ريو', url = 't.me/W_WAW'}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, 
 },
 }
 }
@@ -17357,7 +17353,7 @@ local banhas = 'ᴜѕᴇ : '..banusername
 local rengk = 'ѕᴛᴀ : '..RinkBot
 local masha = 'ᴍѕɢ : '..TotalMsg
 local BIO = 'ʙɪᴏ : '..GetBio(msg.sender_id.user_id)
-local again = '[𝑀??𝐺𝐺𝐴](t.me/W_WAW)'
+local again = '[𝑀??𝐺𝐺𝐴](t.me/iinzzz)'
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
 {
 {text = uass, url = "https://t.me/"..ban.username..""}, 
@@ -19019,7 +19015,7 @@ data = {
 {{text="🦖 Dragon Game 🦖",url='https://t.me/T4TTTTBOT?game=dragon'},{text="🐍 3D Snake Game 🐍",url='https://t.me/T4TTTTBOT?game=snake'}},
 {{text="🔵 Color Game 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 Rocket Game 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 Arrow Game 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
-{{text = 'سورس ريو',url="t.me/W_WAW"}},
+{{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .',url="t.me/iinzzz"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,'*• قائمه الالعاب المتطورة *',"md", true, false, false, false, reply_markup)
@@ -19059,7 +19055,7 @@ data = {
 {text = '0', data = msg.sender_id.user_id..'calc&0'},{text = '.', data = msg.sender_id.user_id..'calc&.'},{text = '+', data = msg.sender_id.user_id..'calc&+'},{text = '=', data = msg.sender_id.user_id..'equal'},
 },
 {
-{text = '-سورس ريو ', url = 'https://t.me/W_WAW'},
+{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ', url = 'https://t.me/iinzzz'},
 },
 }
 }
@@ -19091,9 +19087,9 @@ if msg.content.text then
 if msg.content.text.text == "المارد" and 
 tonumber(msg.reply_to_message_id) == 0 then
 local reply_markup = {inline_keyboard = {{{text = " كيفيه اللعب ", callback_data = msg.sender_id.user_id.."/besso1"}},
-{{text = '-سورس ريو ', url="https://t.me/W_WAW"}},
+{{text = '-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . ', url="https://t.me/iinzzz"}},
 }}
-return https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id="..msg.chat_id.."&video=https://t.me/-سورس ريو s1/14&caption="..URL.escape("⋇ مرحبا عزيزي، انا المارد ريو\nاستطيع معرفه من تفكر به، فلنرى هل تستطيع هزيمتي؟").."&reply_to_message_id="..(msg.id/2097152/0.5).."&reply_markup="..JSON.encode(reply_markup))
+return https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id="..msg.chat_id.."&video=https://t.me/-- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . s1/14&caption="..URL.escape("⋇ مرحبا عزيزي، انا المارد ريو\nاستطيع معرفه من تفكر به، فلنرى هل تستطيع هزيمتي؟").."&reply_to_message_id="..(msg.id/2097152/0.5).."&reply_markup="..JSON.encode(reply_markup))
 end
 end
 
@@ -24218,11 +24214,11 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
   keyboard = {} 
   keyboard.inline_keyboard = {
-  {{text = '- قناة السورس .',url="t.me/W_WAW"}},
-  {{text = '- لشراء بوت .',url="tg://resolve?domain=s_ese"}},
+  {{text = '- قناة السورس .',url="t.me/iinzzz"}},
+  {{text = '- لشراء بوت .',url="t.me/rFrFF"}},
   }
   local msg_id = msg.id/2097152/0.5
-  https.request("https://api.telegram.org/bot"..Token.."/sendPhoto?chat_id="..msg.chat_id.."&reply_to_message_id="..msg_id.."&photo=https://t.me/W_WAW&caption=".. URL.escape("✯ ⦑ Welcome to Source ⦒\n✯ ⦑ SOURCE amer Alshmre ⦒ \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ").."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+  https.request("https://api.telegram.org/bot"..Token.."/sendPhoto?chat_id="..msg.chat_id.."&reply_to_message_id="..msg_id.."&photo=https://t.me/iinzzz&caption=".. URL.escape("✯ ⦑ Welcome to Source ⦒\n✯ ⦑ SOURCE amer Alshmre ⦒ \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ").."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
   end
 ----------------------------------------------------------------------------------------------------
 if text and text:match("^تعيين عدد الاعضاء (%d+)$") then
@@ -24370,7 +24366,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- سورس ريو .', url = 't.me/W_WAW'}, 
+{text = '- - sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ . .', url = 't.me/iinzzz'}, 
 },
 }
 }
@@ -24524,7 +24520,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'سورس ريو', url = 't.me/W_WAW'}, 
+{text = '- sᴏᴜʀᴄᴇ ᴀʟʜᴀʟᴀғɪɪ .', url = 't.me/iinzzz'}, 
 },
 }
 }
