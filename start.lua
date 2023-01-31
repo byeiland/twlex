@@ -633,10 +633,10 @@ if text == 'معرفة المزيد 📩' then
 return bot.sendText(msg.chat_id,msg.id,[[*
 - مرحباً بك من جديد عزيزي 👋🏻
 
-- تم انشاء الصانع مقدم من قناة ( AMERDEV ) مجاناً 
+- تم انشاء الصانع مقدم من قناة ( @iiNzzz ) مجاناً 
 ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯
-- قناة شروحات السورس : @AMERDEV .
-- By : @vvvzvv .*
+- قناة شروحات السورس : @rFrFF .
+- By : @BBI9B .*
 ]], 'md', false, false, false, false, reply_markun)
 end
 if redis:get(bot_id.."Send:Token"..msg.chat_id..":"..msg.sender_id.user_id) == 'true' then
